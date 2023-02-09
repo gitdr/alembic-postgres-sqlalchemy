@@ -1,0 +1,27 @@
+{
+  "name": "Existing Docker Compose (Extend)",
+
+  "dockerComposeFile": "docker-compose.yml",
+
+  "service": "vscode",
+
+  "workspaceFolder": "/workspace",
+
+    "remoteEnv": {
+        "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+    },
+
+  "settings": {
+    "explorer.autoRevealExclude": {
+      "**/node_modules": true
+    }
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    // "ms-vscode.vscode-typescript-next",
+    "esbenp.prettier-vscode"
+    // "angular.ng-template"
+  ],
+  "remoteUser": "vscode"
+}
